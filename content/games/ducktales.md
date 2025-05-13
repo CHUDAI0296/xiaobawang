@@ -1,7 +1,7 @@
 ---
 title: "唐老鸭历险记"
 category: "FC"
-cover: "/images/ducktales.jpg"
+cover: "images/ducktales.jpg"
 year: 1989
 publisher: "Capcom"
 region: "美国"

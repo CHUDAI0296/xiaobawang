@@ -3,7 +3,7 @@ title: "超级马里奥"
 category: "冒险"
 year: 1985
 company: "Nintendo"
-cover: "/images/超级玛丽.jpg"
+cover: "images/超级玛丽.jpg"
 tags: ["平台", "冒险", "经典"]
 ---
 《超级马里奥兄弟》是任天堂推出的世界级经典冒险游戏。  

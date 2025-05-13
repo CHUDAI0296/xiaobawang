@@ -3,7 +3,7 @@ title: "拳皇"
 category: "街机"
 year: 1994
 company: "SNK"
-cover: "/images/拳皇1.jpg"
+cover: "images/拳皇1.jpg"
 tags: ["格斗", "对战", "经典"]
 ---
 《拳皇》（The King of Fighters，简称KOF）是SNK公司推出的经典街机格斗游戏系列。  
