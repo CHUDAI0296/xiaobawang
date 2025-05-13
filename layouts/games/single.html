@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ .Title }} - 游戏详情</title>
+  <style>
+    body {
+      background: #fafbfc;
+      margin: 0;
+      font-family: 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+    }
+    .game-detail-container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      padding: 36px 32px 32px 32px;
+      position: relative;
+    }
+    .game-cover {
+      width: 320px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+      margin-bottom: 24px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .game-title {
+      font-size: 32px;
+      font-weight: bold;
+      color: #23272f;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .game-meta {
+      text-align: center;
+      color: #888;
+      margin-bottom: 18px;
+      font-size: 16px;
+    }
+    .game-tags {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+    .game-tag {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1976d2;
+      border-radius: 12px;
+      padding: 2px 12px;
+      margin: 0 4px;
+      font-size: 14px;
+    }
+    .game-content {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.8;
+      margin-bottom: 32px;
+    }
+    .back-btn {
+      display: inline-block;
+      padding: 8px 24px;
+      background: #3a8dde;
+      color: #fff;
+      border-radius: 20px;
+      font-size: 16px;
+      text-decoration: none;
+      transition: background 0.2s;
+      margin-top: 12px;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+    .back-btn:hover {
+      background: #1976d2;
+    }
+  </style>
+</head>
+<body>
+  <div class="game-detail-container">
+    <img class="game-cover" src="{{ .Params.cover | default "/images/default-cover.png" }}" alt="{{ .Title }}">
+    <div class="game-title">{{ .Title }}</div>
+    <div class="game-meta">
+      {{ with .Params.category }}<span>分类：{{ . }}</span> {{ end }}
+      {{ with .Params.year }}<span> | 年份：{{ . }}</span> {{ end }}
+      {{ with .Params.company }}<span> | 厂商：{{ . }}</span> {{ end }}
+    </div>
+    {{ with .Params.tags }}
+    <div class="game-tags">
+      {{ range . }}
+        <span class="game-tag">{{ . }}</span>
+      {{ end }}
+    </div>
+    {{ end }}
+    <div class="game-content">
+      {{ .Content }}
+    </div>
+    <a href="/" class="back-btn">返回首页</a>
+  </div>
+</body>
+</html>

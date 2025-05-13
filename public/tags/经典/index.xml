@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>经典 on Example Site</title>
+        <link>http://localhost:1313/tags/%E7%BB%8F%E5%85%B8/</link>
+        <description>Recent content in 经典 on Example Site</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>Example Person</copyright><atom:link href="http://localhost:1313/tags/%E7%BB%8F%E5%85%B8/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>拳皇</title>
+        <link>http://localhost:1313/games/kof/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/games/kof/</guid>
+        <description>&lt;p&gt;《拳皇》（The King of Fighters，简称KOF）是SNK公司推出的经典街机格斗游戏系列。&lt;br&gt;
+拥有丰富的角色选择和畅快的连招体验，是无数玩家的童年回忆。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>超级马里奥</title>
+        <link>http://localhost:1313/games/mario/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/games/mario/</guid>
+        <description>&lt;p&gt;《超级马里奥兄弟》是任天堂推出的世界级经典冒险游戏。&lt;br&gt;
+玩家将扮演马里奥，闯关、跳跃、打败敌人，拯救公主，体验童年乐趣！&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>魂斗罗</title>
+        <link>http://localhost:1313/games/contra/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/games/contra/</guid>
+        <description>&lt;p&gt;童年经典射击游戏，双人合作乐趣无穷！&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
