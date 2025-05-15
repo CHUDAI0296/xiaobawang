@@ -90,8 +90,7 @@
 </head>
 <body>
   <div class="game-detail-container">
-    <img class="game-cover" src="{{ .Params.cover | default "/images/default-cover.png" }}" alt="{{ .Title }}">
-    <div class="game-title">{{ .Title }}</div>
+        <img class="game-cover" src="{{ (.Params.cover | default "/images/default-cover.png") | relURL }}" alt="{{ .Title }}"></div>
     <div class="game-meta">
       {{ with .Params.category }}<span>分类：{{ . }}</span> {{ end }}
       {{ with .Params.year }}<span> | 年份：{{ . }}</span> {{ end }}
